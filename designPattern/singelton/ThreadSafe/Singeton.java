@@ -9,12 +9,12 @@ public class Singeton {
 
     }
 
-    public static  Singeton getSingeton()
+    public static  synchronized Singeton getSingeton()
     {
         if(singeton==null)
         {
            singeton = new Singeton();
-           return singeton;
+
         }
         return singeton;
     }

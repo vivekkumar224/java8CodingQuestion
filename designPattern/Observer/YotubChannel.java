@@ -15,7 +15,7 @@ public class YotubChannel implements Subject {
     }
     public  void removeSubcriber(Subcriber subcriber)
     {
-        subcribers.add(subcriber);
+        subcribers.remove(subcriber);
     }
 
 
